@@ -1,0 +1,8 @@
+url: https://github.com/LLL-lyh0/dsh-continue-guard
+name: LLL-lyh0/dsh-continue-guard
+category: session
+icon: https://raw.githubusercontent.com/LLL-lyh0/dsh-continue-guard/main/docs/store/icon-180.png
+tarball: https://github.com/LLL-lyh0/dsh-continue-guard/releases/latest/download/dsh-continue-guard.tgz
+description:
+  en: 'Adds a Continue button to the composer dock and resumes automatically when a turn is cut off by a network drop or an upstream output-limit cut. The click goes through the host submission pipeline — beginSubmission plus session.prompt — so the message carries the real user attribution instead of faking one, and a genuine refusal is reported rather than retried. On startup it also scans recent session logs for a turn that was started and never closed, which is the evidence that the process exited mid-turn, and picks those sessions up within a budget while never touching one the user stopped by hand.'
+  zh: '在输入框停靠区加一个「继续」按钮，并在某一轮被断网或上游输出超限截断时自动续跑。点击走宿主真实的提交链路（beginSubmission + session.prompt），消息带的是真实用户署名而不是伪造来源，真实拒绝会被如实报告而不是重试。宿主重启时还会扫描最近的会话日志，找出「开了却没关」的回合——这正是进程在跑这一轮时退出的证据——按预算把它们接上，而用户自己按过停止的会话永不触碰。'
